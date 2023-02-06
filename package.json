@@ -8,7 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "prepack": "npmignore --auto"
   },
   "keywords": [],
   "author": "Gokul Narayanan",
@@ -18,10 +19,20 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "npmignore": "^0.3.0",
     "react": "^18.2.0",
     "rollup": "^3.14.0"
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "ignore": [
+        "!dist/",
+        "src/",
+        "test/",
+        "*.gitignore"
+
+    ]
   }
 }
