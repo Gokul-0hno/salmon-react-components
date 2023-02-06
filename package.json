@@ -30,7 +30,9 @@
     "ignore": [
         "!dist/",
         "src/",
-        "test/"
+        "test/",
+        "*.gitignore"
+
     ]
   }
 }
